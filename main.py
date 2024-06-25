@@ -9,6 +9,7 @@ import face_recognition
 
 import util
 from test import test
+# from Silent-Face-Anti-Spoofing import test
 
 
 class App:
@@ -39,7 +40,7 @@ class App:
 
     def add_webcam(self, label):
         if 'cap' not in self.__dict__:
-            self.cap = cv2.VideoCapture(2)
+            self.cap = cv2.VideoCapture(0)
 
         self._label = label
         self.process_webcam()
@@ -60,7 +61,7 @@ class App:
 
         label = test(
                 image=self.most_recent_capture_arr,
-                model_dir='/home/phillip/Desktop/todays_tutorial/27_face_recognition_spoofing/code/face-attendance-system/Silent-Face-Anti-Spoofing/resources/anti_spoof_models',
+                model_dir='./resources/anti_spoof_models',
                 device_id=0
                 )
 
@@ -83,7 +84,7 @@ class App:
 
         label = test(
                 image=self.most_recent_capture_arr,
-                model_dir='/home/phillip/Desktop/todays_tutorial/27_face_recognition_spoofing/code/face-attendance-system/Silent-Face-Anti-Spoofing/resources/anti_spoof_models',
+                model_dir='./resources/anti_spoof_models',
                 device_id=0
                 )
 
