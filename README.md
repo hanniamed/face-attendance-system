@@ -2,8 +2,8 @@
 
 
 ## Prueba 1
-En test.py se prueba la implementación de: https://github.com/computervisioneng/Silent-Face-Anti-Spoofing
+En `test.py` se prueba la implementación de: https://github.com/computervisioneng/Silent-Face-Anti-Spoofing
 basado en el modelo entrenado en: https://github.com/minivision-ai/Silent-Face-Anti-Spoofing  
 
 ## Prueba 2
-En la carpeta test_yolo se encuentra la prueba de implementación con Yolov8, basado en el modelo entrenado por: https://www.computervision.zone/courses/anti-spoofing-liveliness-detector/
+En el directorio `test_yolo/test.py` se encuentra la prueba de implementación con Yolov8, basado en el modelo entrenado por: https://www.computervision.zone/courses/anti-spoofing-liveliness-detector/
